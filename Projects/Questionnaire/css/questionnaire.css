@@ -1,0 +1,94 @@
+.questionnaire-inner {
+  background-color: #e5f5ff;
+  border-radius: 8px;
+}
+.questionnaire-title {
+  display: flex;
+  gap: 20px;
+  padding: 24px;
+}
+.questionnaire-title p {
+  width: 100%;
+  margin: 0;
+}
+.questionnaire .round {
+  width: 50px;
+  height: 26px;
+  border: 1px solid;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.questionnaire-q-and-a {
+  padding-left: 45px;
+}
+.questionnaire-q-and-a p {
+  margin: 0;
+  padding: 32px 0 24px 0px;
+}
+.ans-section {
+  display: flex;
+  gap: 20px;
+}
+.ans-div {
+  padding: 10px 20px;
+  height: 45px;
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.ans-div label {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.questionnaire-btn-div {
+  text-align: end;
+  padding: 24px;
+}
+.hideDiv {
+  height: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  display: none;
+}
+.active .questionnaire-title {
+  border-bottom: 1px solid #0072d8;
+}
+.questionnaire .active .round {
+  background-color: #0072d8;
+  color: #fff;
+}
+.questionnaire .done .round {
+  background-color: #198754;
+  color: #fff;
+}
+.questionnaire .done .round span {
+  position: relative;
+}
+.questionnaire .done .round span::before {
+  content: "✓";
+  position: absolute;
+  background-color: #198754;
+  border-radius: 50%;
+}
+.editBtn {
+  cursor: pointer;
+}
+.active .hideDiv {
+  height: 100%;
+  opacity: 1;
+  display: block;
+}
+.selectAndEdit {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.selectAndEdit img {
+  width: 20px;
+  height: 20px;
+}

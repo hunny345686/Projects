@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carausal Project</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 62.5;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+    }
+
+    .container-img {
+      margin: auto;
+      width: 70vw;
+      height: 20rem;
+      border-radius: 1rem;
+      box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+      background-image: url(https://images.unsplash.com/photo-1682685797366-715d29e33f9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+      background-size: cover;
+      animation: gallary 20s linear infinite;
+    }
+
+    @keyframes gallary {
+      0% {
+        background-image: url(https://images.unsplash.com/photo-1695653422287-81cfeeb96ade?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2Nnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60);
+      }
+
+      20% {
+        background-image: url(https://images.unsplash.com/photo-1683009427590-dd987135e66c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+      }
+
+      40% {
+        background-image: url(https://images.unsplash.com/photo-1696862231970-c01a8bbe1033?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60);
+      }
+
+      60% {
+        background-image: url(https://images.unsplash.com/photo-1696986293936-d8d080a88f50?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzOHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60);
+      }
+
+      80% {
+        background-image: url(https://images.unsplash.com/photo-1692525633901-6341ba12a696?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0NHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60);
+      }
+
+      100% {
+        background-image: url(https://images.unsplash.com/photo-1696484877720-5766c6bd1e5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1Mnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-img"></div>
+</body>
+
+</html>

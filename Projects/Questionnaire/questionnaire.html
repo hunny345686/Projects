@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/questionnaire.css" />
+    <title>questionnaire BDO</title>
+  </head>
+  <body>
+    <section class="questionnaire mt-5">
+      <div class="questionnaire-inner container active">
+        <div class="questionnaire-title">
+          <div class="round"><span>1</span></div>
+          <p>Age</p>
+          <div class="selectAndEdit"></div>
+        </div>
+        <div class="hideDiv">
+          <div class="questionnaire-q-and-a">
+            <p>My current age is</p>
+            <div class="ans-section">
+              <div class="ans-div">
+                <label
+                  >21 - 34 years
+                  <input
+                    type="radio"
+                    name="radioName1"
+                    value="21 - 34 years"
+                    checked
+                  />
+                </label>
+              </div>
+              <div class="ans-div">
+                <label
+                  >35 - 65 years<input
+                    type="radio"
+                    name="radioName1"
+                    value="35 - 65 years"
+                /></label>
+              </div>
+              <div class="ans-div">
+                <label
+                  >30 - 40 years<input
+                    type="radio"
+                    name="radioName1"
+                    value="30 - 40 years"
+                /></label>
+              </div>
+            </div>
+          </div>
+          <div class="questionnaire-btn-div">
+            <button class="btn btn-primary questionnaire-btn">Next</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="questionnaire-inner container mt-4">
+        <div class="questionnaire-title">
+          <div class="round"><span>2</span></div>
+          <p>Monthly Income</p>
+          <div class="selectAndEdit"></div>
+        </div>
+        <div class="hideDiv">
+          <div class="questionnaire-q-and-a">
+            <p>My monthly income is</p>
+            <div class="ans-section">
+              <div class="ans-div">
+                <label
+                  >₱ 15,000 - ₱ 31,999<input
+                    type="radio"
+                    name="radioName2"
+                    value="₱ 15,000 - ₱ 31,999"
+                    checked
+                /></label>
+              </div>
+              <div class="ans-div">
+                <label
+                  >₱ 32,000 - ₱ 74,999<input
+                    type="radio"
+                    name="radioName2"
+                    value="₱ 32,000 - ₱ 74,999"
+                /></label>
+              </div>
+              <div class="ans-div">
+                <label
+                  >Above ₱ 75,000<input
+                    type="radio"
+                    name="radioName2"
+                    value="Above ₱ 75,000"
+                /></label>
+              </div>
+            </div>
+          </div>
+          <div class="questionnaire-btn-div">
+            <button class="btn btn-primary questionnaire-btn">Next</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="questionnaire-inner container mt-4">
+        <div class="questionnaire-title">
+          <div class="round"><span>3</span></div>
+          <p>Personality</p>
+          <div class="selectAndEdit"></div>
+        </div>
+        <div class="hideDiv">
+          <div class="questionnaire-q-and-a">
+            <p>My current Personality</p>
+            <div class="ans-section">
+              <div class="ans-div">
+                <label
+                  >Free-Spirited<input
+                    type="radio"
+                    name="radioName"
+                    value="Free-Spirited"
+                    checked="checked"
+                /></label>
+              </div>
+              <div class="ans-div">
+                <label
+                  >Not Available<input
+                    type="radio"
+                    name="radioName"
+                    value="Not Available"
+                /></label>
+              </div>
+              <div class="ans-div">
+                <label
+                  >Testing<input type="radio" name="radioName" value="Testing"
+                /></label>
+              </div>
+            </div>
+          </div>
+          <div class="questionnaire-btn-div">
+            <button class="btn btn-primary questionnaire-btn">Next</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/questionnaire.js"></script>
+  </body>
+</html>

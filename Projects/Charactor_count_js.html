@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		div{
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+		textarea{
+			border:2px solid #0984e3;
+			border-radius: 10px;
+			outline: none;
+			font-size: 1.2rem;
+			padding: 10px 2px;
+			box-shadow: 0 0 4px 1px #b2bec3;
+		}
+
+		button{
+			margin: 20px;
+			padding: 20px 30px;
+			background-color: #74b9ff;
+			color: white;
+			border-radius: 10px;
+			border:2px solid #0984e3;
+			font-size: 1.2rem;
+			outline: none;
+		}
+		p{
+			margin: 20px;
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<textarea name="" id="words" cols="50" rows="10"></textarea>
+		  <br>
+			<p id="showdata"></p>
+			<br>
+			<button onclick="countwords()">Count Charector</button>
+	</div>
+
+	<script>
+		 function countwords()
+		 {
+		 	let noc = document.getElementById('words').value.length;
+		 	document.getElementById('showdata').innerHTML = "The Total Charactor is = " + noc;
+		 }
+	</script>
+</body>
+</html>

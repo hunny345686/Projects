@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Validtion</title>
+
+	 <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+
+</head>
+<body> 
+	 <div class="container">
+	 	<h1 class="text-center text-success">Form Validtaion in Java Script</h1>
+	 	<div class="col-lg-8 m-auto d-block">
+	 		<form action="#" onsubmit=" return validtion()" class="bg-light "> 
+	 			<div class="form-group"> 
+	 				<label for="">Username</label>
+	 				<input type="text" class="form-control" id="user"> 
+	 				<span class="text-danger font-weight-bold" id="un"></span>
+	 			</div>
+	 			<div class="form-group"> 
+	 				<label for="">Password</label>
+	 				<input type="text" class="form-control" id="pass"> 
+	 				<span class="text-danger font-weight-bold" id="ps"></span>
+	 			</div>
+	 			<div class="form-group"> 
+	 				<label for="">Conf Password</label>
+	 				<input type="text" class="form-control" id="conpass"> 
+	 				<span class="text-danger font-weight-bold" id="cps"></span>
+	 			</div>
+	 			<div class="form-group"> 
+	 				<label for="">Mobile</label>
+	 				<input type="text" class="form-control" id="mob"> 
+	 				<span class="text-danger font-weight-bold" id="mobb"></span>
+	 			</div>
+	 			<div class="form-group"> 
+	 				<label for="">Email</label>
+	 				<input type="text" class="form-control" id="email"> 
+	 				<span class="text-danger font-weight-bold" id="e"></span>
+	 			</div>
+
+	 			<input type="submit" name="submit" value="Log In" class="btn btn-success" >
+	 		</form>
+	 	</div>
+	 </div>
+	
+	<script type="text/javascript">
+		
+		function validtion()
+		{
+			var user = document.getElementById('user').value;
+			var pass = document.getElementById('pass').value;
+			var cpass = document.getElementById('conpass').value;
+			var mob = document.getElementById('mob').value;
+			var email = document.getElementById('email').value;
+			
+			if(user=="")
+			{
+				document.getElementById('un').innerHTML ="plz enter name";
+				return false;
+			}
+			if(user.lenth <= 2) 
+			{
+				document.getElementById('un').innerHTML ="Charactor Shoud be greater than two";
+				return false;
+			}
+			if(!isNaN(user))
+			{
+				document.getElementById('un').innerHTML ="name shoud not be a no";
+				return false;
+			}
+			if(pass=="")
+			{
+				document.getElementById('ps').innerHTML ="plz enter pass";
+				return false;
+			}
+			if(cpass=="")
+			{
+				document.getElementById('cps').innerHTML ="plz enter cpass";
+				return false;
+			}
+			if(user=="")
+			{
+				document.getElementById('un').innerHTML ="plz enter name";
+				return false;
+			}
+			if(mob=="")
+			{
+				document.getElementById('mobb').innerHTML ="plz enter mob";
+				return false;
+			}
+			if(email=="")
+			{
+				document.getElementById('e').innerHTML ="plz enter email";
+				return false;
+			}
+
+		}
+
+	</script>
+</body>
+</html>

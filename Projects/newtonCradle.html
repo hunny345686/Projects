@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newton Cradle</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 62.5;
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      height: 100vh;
+      background-color: #191825;
+    }
+
+    .cradle {
+      width: 40rem;
+      height: 40rem;
+      border-radius: .5rem;
+      border-top: 2rem solid #865dff;
+      margin-top: 5rem;
+      display: flex;
+      justify-content: center;
+      gap: 4.5rem;
+    }
+
+    .cradle div {
+      width: .5rem;
+      height: 20rem;
+      background-color: #865dff;
+      position: relative;
+    }
+
+    .cradle div::before {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      width: 5rem;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background-color: #865dff;
+      left: -2.1rem;
+    }
+
+    .cradle div:first-child {
+      animation: swing-left 2s linear infinite;
+      transform-origin: top left;
+
+    }
+
+    .cradle div:last-child {
+      animation: swing-right 2s 1s linear infinite;
+      transform-origin: top left;
+
+    }
+
+    @keyframes swing-right {
+      0% {
+        rotate: 0deg;
+      }
+
+      25% {
+        rotate: -40deg;
+      }
+
+      50% {
+        rotate: 0deg;
+      }
+
+      100% {
+        rotate: 0deg;
+      }
+    }
+
+    @keyframes swing-left {
+      0% {
+        rotate: 0deg;
+      }
+
+      25% {
+        rotate: 40deg;
+      }
+
+      50% {
+        rotate: 0deg;
+      }
+
+      100% {
+        rotate: 0deg;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cradle">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</body>
+
+</html>

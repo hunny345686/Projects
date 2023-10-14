@@ -1,0 +1,64 @@
+.custom-select {
+  position: relative;
+  background-color: #ddd;
+  min-width: 200px;
+  width: fit-content;
+  cursor: pointer;
+}
+.custom-select::after {
+  content: "";
+  display: inline-block;
+  border-top: 0.4em solid;
+  border-right: 0.4em solid transparent;
+  border-bottom: 0;
+  border-left: 0.4em solid transparent;
+  color: gray;
+  transition: transform 0.3s ease;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  right: 10px;
+}
+.custom-select.open::after {
+  transform: rotate(180deg);
+}
+.custom-select span {
+  display: inline-block;
+  padding: 8px 12px;
+  width: 100%;
+}
+.custom-select ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  list-style: none;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+.custom-select ul::-webkit-scrollbar {
+  width: 0;
+}
+.custom-select li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.custom-select li.active {
+  background-color: rgb(102, 102, 227);
+}
+.custom-select li:hover {
+  background-color: rgb(151, 151, 241);
+}
+.custom-select.open ul {
+  display: block;
+}
+
+.cus-select-option {
+  display: none;
+}
